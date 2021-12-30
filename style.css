@@ -1,0 +1,108 @@
+#like{
+    width: 300px;
+    padding: 50px;
+    margin: 20px;
+    color: rgb(13, 16, 19); 
+    border: steelblue 3px;
+}
+
+body {
+    background-image: url(https://1gew6o3qn6vx9kp3s42ge0y1-wpengine.netdna-ssl.com/wp-content/uploads/prod/2020/10/HERO-ART-microsoft_azure_1920x1000_nologo.jpg);
+}
+ #title {
+     font-size: 35px;
+     color: wheat;
+     text-align: center;
+     font-family: 'Times New Roman', Times, serif;
+ }
+
+
+
+ #alt {
+     color: wheat;
+     font-size: 20px;
+     font-family: Georgia, 'Times New Roman', Times, serif;
+ }
+
+ #velo {
+    color: wheat;
+    font-size: 20px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+
+ }
+
+ #disp {
+     color: steelblue;
+     font-size: 25px;
+     font-family: Georgia, 'Times New Roman', Times, serif;
+     text-align: center;
+
+ }
+
+ #lat {
+    color: wheat;
+    font-size: 20px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+ }
+ #lon {
+    color: wheat;
+    font-size: 20px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+ }
+
+ #dispTwo {
+    color:steelblue;
+    font-size: 25px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: center;
+ }
+#dispThree{
+    color:steelblue;
+    font-size: 25px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: center;
+}
+#dispFour{
+    color:steelblue;
+    font-size: 25px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: center;
+}
+
+#placeHolder{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: wheat;
+    font-size: 17px;
+    text-align: center;
+    border-style: solid;
+    border-color: steelblue;
+}
+
+#likeBtn {
+    border: none;
+    background-color: steelblue;
+    font-size: 20px;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 8px;
+    transition-duration: 0.3s;
+}
+#likeBtn:hover{
+ background-color: wheat;
+ color: black;
+}
+
+#dislikeBtn {
+    transition-duration: 0.3s;
+    border: none;
+    background-color: steelblue;
+    font-size: 20px;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 8px;
+
+}
+#dislikeBtn:hover {
+    background-color: wheat;
+    color: black;
+}
