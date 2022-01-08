@@ -106,3 +106,18 @@ body {
     background-color: wheat;
     color: black;
 }
+
+#remove {
+    border: none;
+    background-color: steelblue;
+    font-size: 20px;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 8px;
+    transition-duration: 0.3s;
+}
+
+#remove:hover {
+    background-color: wheat;
+    color: black;
+}
