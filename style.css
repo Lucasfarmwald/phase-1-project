@@ -49,6 +49,11 @@ body {
     font-size: 20px;
     font-family: Georgia, 'Times New Roman', Times, serif;
  }
+ #visibility {
+    color: wheat;
+    font-size: 20px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+ }
 
  #dispTwo {
     color:steelblue;
@@ -68,21 +73,27 @@ body {
     font-family: Georgia, 'Times New Roman', Times, serif;
     text-align: center;
 }
+#dispFive {
+    color:steelblue;
+    font-size: 25px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: center;
+}
 
 #placeHolder{
     font-family: Georgia, 'Times New Roman', Times, serif;
     color: wheat;
-    font-size: 17px;
+    font-size: 20px;
     text-align: center;
-    border-style: solid;
-    border-color: steelblue;
+    border: solid 8px steelblue;
+    border-style: ridge;
 }
 
 #likeBtn {
     border: none;
     background-color: steelblue;
     font-size: 20px;
-    padding: 10px;
+    padding: 9px;
     cursor: pointer;
     border-radius: 8px;
     transition-duration: 0.3s;
@@ -97,7 +108,7 @@ body {
     border: none;
     background-color: steelblue;
     font-size: 20px;
-    padding: 10px;
+    padding: 9px;
     cursor: pointer;
     border-radius: 8px;
 
@@ -111,7 +122,8 @@ body {
     border: none;
     background-color: steelblue;
     font-size: 20px;
-    padding: 10px;
+    
+    padding: 9px;
     cursor: pointer;
     border-radius: 8px;
     transition-duration: 0.3s;
@@ -120,4 +132,50 @@ body {
 #remove:hover {
     background-color: wheat;
     color: black;
+}
+
+#container {
+    height:  relative;
+    min-height: 150px;
+    border: solid 8px  wheat;
+    border-style: ridge;
+    margin: 20px;
+    font-size: 20px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: center;
+}
+#text1 {
+    margin: 20px;
+    color: steelblue;
+    font-size: 15px;
+    font-family: Verdana, Tahoma, sans-serif;
+
+    
+}
+#textBoxHolder {
+    font-size: 20px;  
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: center;
+    color: wheat;
+   
+}
+
+#submitBtn {
+    border: none;
+    background-color: steelblue;
+    font-size: 20px;
+    
+    padding: 9px;
+    cursor: pointer;
+    border-radius: 8px;
+    transition-duration: 0.3s;
+}
+#submitBtn:hover {
+    background-color: wheat;
+    color: black;
+}
+
+#buttonHolder {
+    height: 50px;
+    text-align: center;
 }

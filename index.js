@@ -1,20 +1,20 @@
-  // adding an eventlistener for "dom content loaded"
+ 
   
 window.addEventListener('DOMContentLoaded', (event) => {
     console.log('DOM fully loaded and parsed');
 
-// creating a funtion with fetch to grab data from the api, and using object destructuring to create variables for different items.
 
 async function Iss(){
     const response = await fetch(api)
     const data = await response.json();
-    const {velocity , altitude , latitude , longitude} = data;
+    const {velocity , altitude , latitude , longitude,visibility} = data;
 
 
     document.getElementById('velo').textContent = velocity;
     document.getElementById('alt').textContent = altitude;
     document.getElementById('lat').textContent = latitude;
-    document.getElementById('lon').textContent = longitude
+    document.getElementById('lon').textContent = longitude;
+    document.getElementById('visibility').textContent = visibility
     console.log(data)
 }
  const api = 'https://api.wheretheiss.at/v1/satellites/25544'
@@ -28,6 +28,10 @@ Iss()
 const header = document.getElementById("title")
 const like = document.getElementById("likeBtn")
 const dislike = document.getElementById('dislikeBtn')
+const textBox = document.getElementById('textbox')
+
+
+
 
  
   function handleChange(){
@@ -62,4 +66,31 @@ const dislike = document.getElementById('dislikeBtn')
 
 
   remove.addEventListener('click',handleRemove)
+
+  function handleSubmit () {
+    const newP = document.createElement('p')
+    const div = document.getElementById('container')
+    const text = document.getElementById('text1').value;
+    newP.innerText = text
+    newP.style.color = 'wheat'
+    div.appendChild(newP)
+    
+  
+  }
+ 
+ const submitbutton = document.getElementById('submitBtn')
+
+  submitbutton.addEventListener('click',handleSubmit)
+
+
+
+
+
 });
+
+ // i want to take the text that is written into the text box and dosplay that information in
+ // the div "container"
+
+
+ 
+ 
