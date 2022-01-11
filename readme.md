@@ -1,6 +1,6 @@
-"Where is the International Space Station"
+ "The International Space Station"
 
-Welcome to "Where is the International Space Station".
+Welcome to  "The International Space Station".
 In this project I am using fetch to grab information on the space station.
 currently in this project I am displaying Latitude,Longitude,Altitude,Velocity and Visibility.
 In this project I have also created a basic "Like" and "Dislike" button.
