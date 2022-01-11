@@ -21,16 +21,13 @@ window.addEventListener('DOMContentLoaded', (event) => {
     
 
 
-const header = document.getElementById("title")
 const like = document.getElementById("likeBtn")
 const dislike = document.getElementById('dislikeBtn')
-const textBox = document.getElementById('textbox')
-
 
 
 
  
-  function handleChange(){
+  function handleDislike(){
       const div = document.getElementById('container')
       const newTag = document.createElement("p")
       newTag.innerText = ("Tell me what you would like to see!")
@@ -39,7 +36,7 @@ const textBox = document.getElementById('textbox')
   }
  
  
-  dislike.addEventListener('click',handleChange)
+  dislike.addEventListener('click',handleDislike)
 
  
  function handleLike(){
