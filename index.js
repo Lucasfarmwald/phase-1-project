@@ -60,7 +60,7 @@ const dislike = document.getElementById('dislikeBtn')
 
   remove.addEventListener('click',handleRemove)
 
-  function handleSubmit () {
+  function handleTextBox () {
     const newP = document.createElement('p')
     const div = document.getElementById('container')
     const text = document.getElementById('text1').value;
@@ -73,7 +73,7 @@ const dislike = document.getElementById('dislikeBtn')
  
  const submitbutton = document.getElementById('submitBtn')
 
-  submitbutton.addEventListener('click',handleSubmit)
+  submitbutton.addEventListener('click',handleTextBox)
 
 
 
