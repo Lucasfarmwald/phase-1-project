@@ -1,28 +1,24 @@
  
   
 window.addEventListener('DOMContentLoaded', (event) => {
-    console.log('DOM fully loaded and parsed');
+    //console.log('DOM fully loaded and parsed');
 
-
-async function Iss(){
-    const response = await fetch(api)
-    const data = await response.json();
-    const {velocity , altitude , latitude , longitude,visibility} = data;
-
+  
+    fetch('https://api.wheretheiss.at/v1/satellites/25544')
+    .then(function(response){
+      return response.json();
+    })
+    .then(function (data){
+      console.log(data)
+      const {velocity,altitude,latitude,longitude,visibility} = data
 
     document.getElementById('velo').textContent = velocity;
     document.getElementById('alt').textContent = altitude;
     document.getElementById('lat').textContent = latitude;
     document.getElementById('lon').textContent = longitude;
     document.getElementById('visibility').textContent = visibility
-    console.log(data)
-}
- const api = 'https://api.wheretheiss.at/v1/satellites/25544'
-
-
-
-
-Iss()
+ } )
+    
 
 
 const header = document.getElementById("title")
@@ -37,7 +33,7 @@ const textBox = document.getElementById('textbox')
   function handleChange(){
       const div = document.getElementById('container')
       const newTag = document.createElement("p")
-      newTag.innerText = ("you cannot change the speed")
+      newTag.innerText = ("Tell me what you would like to see!")
       newTag.style.color = "wheat"
       div.appendChild(newTag)
   }
@@ -49,7 +45,7 @@ const textBox = document.getElementById('textbox')
  function handleLike(){
     const div = document.getElementById('container')
     const newTag = document.createElement("p")
-    newTag.innerText = ("Its a great speed")
+    newTag.innerText = ("Thank you!")
     newTag.style.color = "wheat"
     div.appendChild(newTag)
  }
@@ -88,8 +84,6 @@ const textBox = document.getElementById('textbox')
 
 });
 
- // i want to take the text that is written into the text box and dosplay that information in
- // the div "container"
 
 
  

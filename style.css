@@ -92,6 +92,7 @@ body {
 #likeBtn {
     border: none;
     background-color: steelblue;
+    color: wheat;
     font-size: 20px;
     padding: 9px;
     cursor: pointer;
@@ -107,6 +108,7 @@ body {
     transition-duration: 0.3s;
     border: none;
     background-color: steelblue;
+    color: wheat;
     font-size: 20px;
     padding: 9px;
     cursor: pointer;
@@ -122,7 +124,7 @@ body {
     border: none;
     background-color: steelblue;
     font-size: 20px;
-    
+    color: wheat;
     padding: 9px;
     cursor: pointer;
     border-radius: 8px;
@@ -146,7 +148,7 @@ body {
 }
 #text1 {
     margin: 20px;
-    color: steelblue;
+    color: black;
     font-size: 15px;
     font-family: Verdana, Tahoma, sans-serif;
 
@@ -164,7 +166,7 @@ body {
     border: none;
     background-color: steelblue;
     font-size: 20px;
-    
+    color: wheat;
     padding: 9px;
     cursor: pointer;
     border-radius: 8px;
